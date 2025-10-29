@@ -3,70 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooper-Design Group</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Us - Cooper Design Group</title>
+    <link rel="stylesheet" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <style>
-        .c-item{
-            height: 500px;
-        }
-        .c-img{
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(0.6);
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-       <!-- Logo Section - Centered -->
-    <div class="text-center m-0 bg-light">
-        <img src="images/COOPER DESIGN GROUP.png" alt="Cooper Design Group" height="200">
-    </div>
-    <!-- Navigation Bar with Hamburger Menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
-        <div class="container-fluid justify-content-center">
-            <!-- Hamburger Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Navigation Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio & Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <!-- Navbar (same as homepage) -->
+     <div class="hero-section">
+        <!-- Navbar Overlay Container -->
+        <div class="navbar-overlay">
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-transparent py-2 fixed-top">
+                <div class="container-fluid justify-content-center">
+                    <!-- Hamburger Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Navigation Links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bold" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="portfolio.html">Portfolio & Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+  <!-- Slideshow Carousel - Background -->
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="images/Lot 7 CC.jpeg" class="d-block w-100 c-img" alt="Abernethy Project">
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="images/image.jpeg" class="d-block w-100 c-img" alt="Dining Room">
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="images/Abernethy.jpeg" class="d-block w-100 c-img" alt="Hop & Vine">
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="images/Dixon.jpeg" class="d-block w-100 c-img" alt="Dixon Project">
+                </div>
             </div>
         </div>
-    </nav>
-    <!--Slideshow carousel-->
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-  <div class="carousel-inner">
-    <div class="carousel-item active c-item">
-      <img src="images/Abernethy.jpeg" class="d-block w-100 c-img" alt="...">
     </div>
-    <div class="carousel-item c-item">
-      <img src="images/After Dining Room 709 N Main.jpeg" class="d-block w-100 c-img" alt="...">
-    </div>
-    <div class="carousel-item c-item">
-      <img src="images/After Hop & Vine.jpeg" class="d-block w-100 c-img" alt="...">
-    </div>
-    <div class="carousel-item  c-item">
-      <img src="images/Dixon.jpeg" class="d-block w-100 c-img" alt="...">
-    </div>
-  </div>
 </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+<!-- Contact Header -->
+    <section class="contact-hero  py-0 my-0">
+        <div class="container text-center">
+            <h1 data-aos="fade-up">Get In Touch</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="200">We'd love to hear about your project</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Information -->
+                <div class="col-lg-4" data-aos="fade-right">
+                    <h2 class="mb-4">Contact Information</h2>
+                    <p class="mb-4">Reach out to us and let's discuss how we can transform your space.</p>
+                    
+                    <!-- Contact Cards -->
+                    <div class="contact-info-card mb-3">
+                        <i class="bi bi-geo-alt-fill fs-3"></i>
+                        <div>
+                            <h5>Office Location</h5>
+                            <p>225 Baker Dr, PO Box 5000<br>Davidson, NC 28035</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card mb-3">
+                        <i class="bi bi-telephone-fill fs-3"></i>
+                        <div>
+                            <h5>Phone</h5>
+                            <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card mb-3">
+                        <i class="bi bi-envelope-fill fs-3"></i>
+                        <div>
+                            <h5>Email</h5>
+                            <p><a href="mailto:info@cooperdesign.com">info@cooperdesign.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card mb-4">
+                        <i class="bi bi-clock-fill fs-3"></i>
+                        <div>
+                            <h5>Business Hours</h5>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="https://pinterest.com" target="_blank"><i class="bi bi-pinterest fs-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="contact-form-wrapper">
+                        <h2 class="mb-4">Send Us a Message</h2>
+                        <form class="contact-form">
+                            <div class="row g-3">
+                                <!-- Name -->
+                                <div class="col-md-6">
+                                    <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890">
+                                </div>
+
+                                <!-- Service Type -->
+                                <div class="col-md-6">
+                                    <label for="serviceType" class="form-label">Type of Inquiry <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="serviceType" required>
+                                        <option selected disabled value="">Choose...</option>
+                                        <option value="residential">Residential Design</option>
+                                        <option value="commercial">Commercial Design</option>
+                                        <option value="consultation">Design Consultation</option>
+                                        <option value="renovation">Renovation Project</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <!-- Budget -->
+                                <div class="col-12">
+                                    <label for="budget" class="form-label">Estimated Budget</label>
+                                    <select class="form-select" id="budget">
+                                        <option selected disabled value="">Select range...</option>
+                                        <option value="under10k">Under $10,000</option>
+                                        <option value="10k-25k">$10,000 - $25,000</option>
+                                        <option value="25k-50k">$25,000 - $50,000</option>
+                                        <option value="50k-100k">$50,000 - $100,000</option>
+                                        <option value="over100k">Over $100,000</option>
+                                    </select>
+                                </div>
+
+                                <!-- Timeline -->
+                                <div class="col-12">
+                                    <label for="timeline" class="form-label">Project Timeline</label>
+                                    <select class="form-select" id="timeline">
+                                        <option selected disabled value="">When do you want to start?</option>
+                                        <option value="asap">As soon as possible</option>
+                                        <option value="1-3months">1-3 months</option>
+                                        <option value="3-6months">3-6 months</option>
+                                        <option value="6plus">6+ months</option>
+                                        <option value="exploring">Just exploring</option>
+                                    </select>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Your Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your project, style preferences, and any specific requirements..." required></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="bi bi-send"></i> Send Message
+                                    </button>
+                                    <p class="text-muted mt-3 small">We'll get back to you within 24 hours</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5" style="background: var(--cream);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+                <p class="lead" data-aos="fade-up" data-aos-delay="100">Got questions? We've got answers!</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item" data-aos="fade-up">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What services do you offer?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer comprehensive interior design services including residential design, commercial spaces, design consultation, space planning, renovation projects, furniture selection, color consulting, and full project management from concept to completion.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How much does interior design cost?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our pricing varies based on project scope, size, and complexity. We offer both hourly rates and flat-fee packages. Initial consultations are complimentary, and we'll provide a detailed quote after understanding your specific needs. Projects typically range from $5,000 to $100,000+.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How long does a typical project take?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Timeline depends on project scope. A single room design typically takes 4-6 weeks, while full home designs can take 3-6 months. Renovation projects may take longer depending on construction requirements. We'll provide a detailed timeline during our initial consultation.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Do I need to be present during the design process?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    While your input is valuable, you don't need to be present for every step. We'll schedule key meetings for concept presentations, material selections, and final walkthroughs. We can work remotely and communicate via email, phone, and video calls for your convenience.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    What areas do you serve?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We're based in Davidson, NC, and primarily serve the greater Charlotte area including Cornelius, Huntersville, Mooresville, and surrounding communities. We also take on select projects throughout North Carolina and neighboring states. Virtual design services are available nationwide.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Can you work with my existing furniture?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We're happy to incorporate your existing pieces into the new design. We'll assess what works with the overall vision and suggest ways to refresh or reposition items you love. This can also help manage your budget effectively.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    What's included in the initial consultation?
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our complimentary initial consultation includes a site visit, discussion of your goals and style preferences, assessment of your space, preliminary ideas, project timeline overview, and a detailed proposal with estimated costs. This typically takes 60-90 minutes.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-12">
+                    <!-- Google Maps Embed for Davidson, NC -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3257.234567890123!2d-80.84860000000001!3d35.499413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541daeb28d2c63%3A0x9e4e9e5e9e5e9e5e!2sDavidson%2C%20NC%2028036!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section py-5" style="background: var(--beige);">
+        <div class="container text-center">
+            <h2 class="mb-4" data-aos="fade-up">Ready to Get Started?</h2>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">Schedule your free consultation today</p>
+            <a href="tel:+1234567890" class="btn btn-primary btn-lg me-3" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-telephone"></i> Call Now
+            </a>
+            <a href="mailto:info@cooperdesign.com" class="btn btn-outline-primary btn-lg" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-envelope"></i> Email Us
+            </a>
+        </div>
+    </section>
+
+
+     <!-- Minimal Footer -->
+<footer class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <!-- Logo or Brand Name -->
+        <h3 class="mb-4">Cooper Design Group</h3>
+        
+        <!-- Large Social Icons -->
+        <div class="social-icons-large mb-4">
+            <a href="https://linkedin.com" target="_blank" class="text-white mx-3">
+                <i class="bi bi-linkedin fs-1"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white mx-3">
+                <i class="bi bi-instagram fs-1"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" class="text-white mx-3">
+                <i class="bi bi-facebook fs-1"></i>
+            </a>
+            <a href="https://pinterest.com" target="_blank" class="text-white mx-3">
+                <i class="bi bi-pinterest fs-1"></i>
+            </a>
+        </div>
+        
+        <!-- Contact Info -->
+        <p class="mb-2">
+            <i class="bi bi-envelope"></i> info@cooperdesign.com | 
+            <i class="bi bi-phone"></i> (123) 456-7890
+        </p>
+        <p class="mb-2">225 Baker Dr, Davidson, NC 28035</p>
+        
+        <!-- Copyright -->
+        <hr class="my-4 bg-white opacity-25">
+        <p class="mb-0">&copy; 2025 Cooper Design Group. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
