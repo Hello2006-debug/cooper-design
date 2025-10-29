@@ -1,0 +1,175 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Apply Playfair Display font */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Carousel as background */
+.c-item {
+    height: 100vh;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.65);
+}
+
+/* Navbar overlay container */
+.navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Logo section - NO GAPS */
+.logo-section {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px 0 0 0; /* Only padding on top */
+    margin: 0;
+    line-height: 0; /* Removes extra spacing */
+}
+
+.logo-section img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navbar - NO GAPS */
+.navbar-transparent {
+    background: rgba(255, 255, 255, 0.4) !important;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Navigation links */
+.navbar-transparent .nav-link {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+}
+/*About section*/
+.about {
+    font-family: 'Playfair Display', serif;
+    background: rgba(192, 159, 159, 0.1);
+}
+
+.about h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.about p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+/* Portfolio Carousel Styling */
+#portfolioCarousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.portfolio-img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+#portfolioCarousel .carousel-caption {
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 20px 20px 20px;
+}
+
+#portfolioCarousel .carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#portfolioCarousel .carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Carousel Controls */
+#portfolioCarousel .carousel-control-prev-icon,
+#portfolioCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* Carousel Indicators */
+#portfolioCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* View More Button */
+.btn-outline-primary {
+    border-width: 2px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+/* Find Us Card */
+.Find Us h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.Find Us p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-img {
+        height: 250px;
+    }
+    
+    #portfolioCarousel .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+    
+    #portfolioCarousel .carousel-caption p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+    
+    .logo-section img {
+        height: 120px;
+    }
+}
